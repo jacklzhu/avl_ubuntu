@@ -1,4 +1,10 @@
+Fork of avl (http://web.mit.edu/drela/Public/web/avl/) that compiles on ubuntu 14.04
+Based on some of the changes here: http://www.jwwulf.de/en/flying/crrcsim/avl_install_en.htm
 
+install gfortran, and then follow the instructions below.
+
+Original AVL makefile:
+------------------------------------------------------------
 General
 -------
 AVL and its plot library should compile on any Unix system 
