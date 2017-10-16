@@ -1,7 +1,7 @@
 
 #FC = f77
-FC = ifort
-FLG = -O
+FC = gfortran
+FLG = -O -fbounds-check -fdefault-real-8 -fdefault-double-8
 EISLIB = eispack.a
 AR = ar r
 RAN = ranlib

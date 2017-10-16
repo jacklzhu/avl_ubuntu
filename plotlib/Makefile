@@ -69,7 +69,7 @@ OBJ3D  = plt_3D.o
 
 ###================================================
 ###  Default compilers and flags, install commands
-FC = f77
+FC = gfortran
 CC  = cc
 # Some fortrans need trailing underscores in C interface symbols (see Xwin.c)
 DEFINE = -DUNDERSCORE

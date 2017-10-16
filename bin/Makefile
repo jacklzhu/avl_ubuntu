@@ -17,14 +17,15 @@ userio.o plutil.o arrow3d.o getvm.o \
 matrix.o spline.o sgutil.o \
 second.o
 
-PLTOBJ = ../plotlib/libPlt.a
+#PLTOBJ = ../plotlib/libPlt.a
+PLTOBJ = ../plotlib/libPltDP.a
 EIGOBJ = ../eispack/eispack.a
 ## EIGOBJ = eispack.o
 
 ###================================================
 ###  Default compilers and flags
-FC = f77
-FFLAGS = -O
+FC = gfortran
+FFLAGS = -c -O -fbounds-check -fdefault-real-8 -fdefault-double-8
 PLTLIB = -lX11
 FTNLIB =
 
@@ -64,15 +65,15 @@ SECOND = second_g77.f
 #FFLAGS = -O3
 ##--------------------------
 ### Intel Fortran Compiler 8.x
-FC = ifort
-FFLAGS = -O 
-PLTLIB = -L/usr/X11R6/lib -lX11
-SECOND = second_ifc.f
+# FC = ifort
+#FFLAGS = -O 
+#PLTLIB = -L/usr/X11R6/lib -lX11
+#SECOND = second_ifc.f
 #FTNLIB = -Vaxlib
 ##--------------------------
 ### double-precision option (also need double precision Eispack and libPlt)
-FFLAGS = -O -r8
-PLTOBJ = ../plotlib/libPltDP.a 
+#FFLAGS = -O -r8
+#PLTOBJ = ../plotlib/libPltDP.a 
 
 
 
